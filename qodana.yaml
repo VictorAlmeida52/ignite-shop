@@ -1,0 +1,39 @@
+version: "1.0"
+profile:
+  name: qodana.starter
+include:
+  - name: CssConvertColorToHexInspection
+  - name: CssOverwrittenProperties
+  - name: CssReplaceWithShorthandSafely
+  - name: CssBrowserCompatibilityForProperties
+  - name: CssUnusedSymbol
+  - name: ES6PossiblyAsyncFunction
+  - name: ES6MissingAwait
+  - name: ES6RedundantAwait
+  - name: JSIgnoredPromiseFromCall
+  - name: ES6TopLevelAwaitExpression
+  - name: JsCoverageInspection
+  - name: Eslint
+  - name: SimplifiableIfStatement
+  - name: SizeReplaceableByIsEmpty
+  - name: JSDeclarationsAtScopeStart
+  - name: SingleStatementInBlock
+  - name: CssRedundantUnit
+  - name: DocumentWriteJS
+  - name: DotEnvDuplicateKeyInspection
+  - name: DotEnvIncorrectDelimiterInspection
+  - name: DotEnvLowercaseKeyInspection
+  - name: DotEnvSpaceInsideNonQuotedInspection
+  - name: DotEnvTrailingWhitespaceInspection
+  - name: CheckEmptyScriptTag
+  - name: HtmlDeprecatedAttribute
+  - name: HtmlDeprecatedTag
+  - name: HtmlExtraClosingTag
+  - name: NodeCoreCodingAssistance
+  - name: JSXDomNesting
+  - name: TypeScriptFieldCanBeMadeReadonly
+  - name: TypeScriptConfig
+  - name: TypeScriptValidateTypes
+  - name: TypeScriptValidateJSTypes
+  - name: TypeScriptCheckImport
+linter: jetbrains/qodana-jvm:latest
